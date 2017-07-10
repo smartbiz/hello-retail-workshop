@@ -1,13 +1,11 @@
-# Hello, Retail! The workshop.
-![Serverless all the things!](Images/hello-retail-icon.png)
+# Serverless Retail Workshop.
 
-This GitHub repository is an open-source workshop intended to accompany the core functional code in https://github.com/Nordstrom/hello-retail. For the workshop portion, participants take part in an interactive exercise playing the roles of merchants, photographers, and customers using hello-retail core.  After that, you extend it using this workshop to calculate the winning photographer and merchant.  Perhaps, afterwards, you can extend it in even more interesting ways for extra credit!
+This GitHub repository is an open-source workshop intended to accompany the core functional code in https://github.com/smartbiz/serverless-retail. For the workshop portion, participants take part in an interactive exercise playing the roles of merchants, photographers, and customers using hello-retail core.  After that, you extend it using this workshop to calculate the winning photographer and merchant.  Perhaps, afterwards, you can extend it in even more interesting ways for extra credit!
 
-### TL;DR:
-Hello, Retail! is a Nordstrom Technology open-source project. Hello, Retail! is a 100% serverless, event-driven framework and functional proof-of-concept showcasing a central unified log approach as applied to the retail problem space. All code and patterns are intended to be re-usable for scalable applications large and small.
+Serverless Retail is a 100% Serverless, Event-Driven Framework and Functional Proof-Of-Concept showcasing a central unified log approach as applied to the retail problem space. All code and patterns are intended to be re-usable for scalable applications large and small.
 
-## Hello, Retail! core explained - an event-centric, serverless architecture
-![Serverless all the things!](Images/hello-retail-architecture.png)
+## Serverless Retail! core explained - an event-centric, serverless architecture
+![Serverless all the things!](images/serverless-retail-architecture.png)
 
 ## Technologies used for this workshop
 * **AWS Lambda** One way of thinking about it is 'functions as a service.'
@@ -20,7 +18,7 @@ Hello, Retail! is a Nordstrom Technology open-source project. Hello, Retail! is 
 Serverless architectures offer incredible promise to reduce code complexity, operations costs, improve scalability, and when used correctly, security.  When you go serverless, you quickly realize the power of event-driven architectures.  These architectures are impedance matched with stateless, event-driven AWS Lambda functions and AWS Step Functions fully managed state machines.  A complete systems architecture that takes advantage of a unified central log/stream has benefits to extensibility, simplicity, backup and restore, and databases-as-cattle.  This project attempts to explore and prove out some of these concepts in a production-ready and scalable format.
 
 ## What you'll build in this workshop
-![Serverless all the things!](Images/hello-retail-workshop.png)
+![Serverless all the things!](images/serverless-retail-workshop.png)
 
 In this diagram we see a lambda consuming from the stream and populating two DynamoDB tables.  The first keeps track of which merchants and photographers are associated with which products.  The second table maintains a tally of sales per merchant and sales per photographer.  The web service that is exposed through API Gateway invokes a lambda that reads from this aggregated view.
 
