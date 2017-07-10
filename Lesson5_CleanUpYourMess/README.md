@@ -49,9 +49,9 @@ serverless remove -s %STAGE%
 
 You should see a message from Serverless when each of your stacks is removed.
 
-## remove Hello-Retail application from your Amazon account
+## remove Serverless-Retail application from your Amazon account
 
-Use the [Manage Login with Amazon](https://www.amazon.com/ap/adam) to remove the `HELLO-RETAIL-WEB-APP` application from your account.
+Use the [Manage Login with Amazon](https://www.amazon.com/ap/adam) to remove the `SERVERLESS-RETAIL-WEB-APP` application from your account.
 
 ## serverless reference
 

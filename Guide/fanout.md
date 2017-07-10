@@ -1,13 +1,13 @@
 # Using a Fanout
 
 If you're curious about the fan-out Lambda we're using to write to everyone's stream: https://github.com/Nordstrom/aws-lambda-fanout, which is forked from https://github.com/awslabs/aws-lambda-fanout.  Here are the simplified instructions for using their CLI to deploy a fanout service.  *Note that this is not using the Serverless Framework for deployment and management.*
-### Step A: Clone the aws-lambda-fanout repo and cd to the aws-lambda-fanout directory.  Ensure you have set up your AWS credentials for the account in which you have deployed hello-retail.  Then you can directly type
+### Step A: Clone the aws-lambda-fanout repo and cd to the aws-lambda-fanout directory.  Ensure you have set up your AWS credentials for the account in which you have deployed serverless-retail.  Then you can directly type
 ```sh
 $ ./fanout deploy
 ```
 The default lambda name will be fanout (same as using the option --function fanout).  You can also deploy changes to the fanout lambda using this command.
 
-### Step B: Register all source-to-target mappings.  Source is the hello-retail stream (Core Stream), in our use case, and target is the local copy of the hello-retail stream.  As an example of registering one kinesis stream to another kinesis stream:
+### Step B: Register all source-to-target mappings.  Source is the serverless-retail stream (Core Stream), in our use case, and target is the local copy of the serverless-retail stream.  As an example of registering one kinesis stream to another kinesis stream:
 ```sh
 $  ./fanout register kinesis --source-arn arn:aws:kinesis:<CoreStreamAWSRegion>:<CoreStreamAWSAccountNumber>:stream/<CoreStreamName> --id $STAGE  --destination-region $REGION --active true --parallel false --destination-role-arn <the role arn in Step 5 above> --destination <the Kinesis arn in Step 5 above>
 ```

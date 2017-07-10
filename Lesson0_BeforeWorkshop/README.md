@@ -3,7 +3,7 @@ Goal: Install everything needed for the workshop and confirm that you can login 
 
 We advise using the native command line tools for your OS.
 
-### Step 1: Clone the Hello-Retail-Workshop repo on your local machine
+### Step 1: Clone the Serverless-Retail-Workshop repo on your local machine
 
 Install git on your local machine by following instructions here: https://git-scm.com/downloads
 

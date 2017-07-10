@@ -1,6 +1,6 @@
-# Lesson 1: Create your own local copy of the hello-retail stream.
+# Lesson 1: Create your own local copy of the serverless-retail stream.
 
-Goal: In order to prevent resource conflicts between participants, you will have your own copy of the hello-retail kinesis event stream in your account.  Once you've created it, we will begin publishing events to it on the day of the conference using a fan-out lambda function on our core stream.
+Goal: In order to prevent resource conflicts between participants, you will have your own copy of the serverless-retail kinesis event stream in your account.  Once you've created it, we will begin publishing events to it on the day of the conference using a fan-out lambda function on our core stream.
 
 ### Step 1: Refresh your repo
 
@@ -44,7 +44,7 @@ In the workshop context, if you are using a shared account, we will provide a wo
 
 The [Serverless Framework](https://serverless.com/) allows you to create a description of your serverless system in a unified way that supports repeated deployments and iterative improvements over time.  The unit of deployment is called a service.  A single service is represented by and defined with a `serverless.yml` file that declares your serverless components, their configuration, and their relationships to one another.
 
-The `serverless.yml` file for lesson 1 declares a Kinesis Stream that you will deploy and then register with the `hello-retail` system as a place to record all the activity that happens while we use the application.  We'll get into what this is and why it is important but for now we are going to just review and deploy it.
+The `serverless.yml` file for lesson 1 declares a Kinesis Stream that you will deploy and then register with the `serverless-retail` system as a place to record all the activity that happens while we use the application.  We'll get into what this is and why it is important but for now we are going to just review and deploy it.
 
 #### OS X
 

@@ -32,7 +32,7 @@ const impl = {
    * Register creator or photographer to contributions tables.  Example event (for creator):
    * {
    *   "schema": "com.nordstrom/retail-stream-egress/1-0-0",
-   *   "origin": "hello-retail/product-producer-creator/uniqueId/friendlyName",
+   *   "origin": "serverless-retail/product-producer-creator/uniqueId/friendlyName",
    *   "timeOrigin": "2017-03-28T23:29:23.160Z",
    *   "data": {
    *     "schema": "com.nordstrom/product/create/1-0-0",
@@ -73,7 +73,7 @@ const impl = {
       '#cb=if_not_exists(#cb,:cb),',
       '#u=:u,',
       '#ub=:ub,',
-      '#ro=if_not_exists(#ro,:ro),', // We shouldn't have to block overwrites, because order guarantee should mean registration event will always come first and nature of hello-retail should not have any way to change a creator or photographer, once registered, BUT just saw this happen with photographers because someone went in and reset by hand.  Until we have re-shoots be a feature, all credit still goes to original contributor.
+      '#ro=if_not_exists(#ro,:ro),', // We shouldn't have to block overwrites, because order guarantee should mean registration event will always come first and nature of serverless-retail should not have any way to change a creator or photographer, once registered, BUT just saw this happen with photographers because someone went in and reset by hand.  Until we have re-shoots be a feature, all credit still goes to original contributor.
       '#sc=if_not_exists(#sc,:zero),', // Score initializes at 0.  If this was an attempt to put in new contributor, then that gets blocked (no overwrites of contributors), so score should not reset to 0 (unless we later make re-shoots a feature).
       '#ev=:ev',
     ]
@@ -135,7 +135,7 @@ const impl = {
    *      "schema":"com.nordstrom/product/purchase/1-0-0",
    *      "id":"7749361"
    *   },
-   *   "origin":"hello-retail/web-client-purchase-product/uniqueId/friendlyName",
+   *   "origin":"serverless-retail/web-client-purchase-product/uniqueId/friendlyName",
    *   "eventId":"shardId-000000000001:49571669109051079099161633575187621651768511161306185746",
    *   "timeIngest":"2017-03-28T23:52:53.818Z",
    *   "timeProcess":"2017-03-28T23:52:59.677Z"

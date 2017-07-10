@@ -34,7 +34,7 @@ const impl = {
    * Register creator or photographer to contributions tables.  Example event (for creator):
    * {
    *   "schema": "com.nordstrom/retail-stream-egress/1-0-0",
-   *   "origin": "hello-retail/product-producer-creator/uniqueId/friendlyName",
+   *   "origin": "serverless-retail/product-producer-creator/uniqueId/friendlyName",
    *   "timeOrigin": "2017-03-28T23:29:23.160Z",
    *   "data": {
    *     "schema": "com.nordstrom/product/create/1-0-0",
@@ -365,7 +365,7 @@ const impl = {
    *      "schema":"com.nordstrom/product/purchase/1-0-0",
    *      "id":"7749361"
    *   },
-   *   "origin":"hello-retail/web-client-purchase-product/uniqueId/friendlyName",
+   *   "origin":"serverless-retail/web-client-purchase-product/uniqueId/friendlyName",
    *   "eventId":"shardId-000000000001:49571669109051079099161633575187621651768511161306185746",
    *   "timeIngest":"2017-03-28T23:52:53.818Z",
    *   "timeProcess":"2017-03-28T23:52:59.677Z"
