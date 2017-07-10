@@ -21,15 +21,16 @@ We recommend you use your User ID to ensure it's unique and to allow you to sear
 #### OS X
 
 ```sh
-export STAGE=<your_unique_id_without_hyphen>
-export REGION=us-west-2
+// export STAGE=<your_unique_id_without_hyphen>
+export STAGE=STAGING
+export REGION=ap-southeast-2
 ```
 
 #### Windows
 
 ```bat
 set STAGE=<your_unique_id_without_hyphen>
-set REGION=us-west-2
+set REGION=ap-southeast-2
 ```
 
 For the rest of the workshop, the commands will reference `$STAGE`/`%STAGE%` and `$REGION`/`%REGION%` and you will be able to find your components in the AWS console using your stage name.

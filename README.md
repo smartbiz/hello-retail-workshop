@@ -2,7 +2,18 @@
 
 This GitHub repository is an open-source workshop intended to accompany the core functional code in https://github.com/smartbiz/serverless-retail. For the workshop portion, participants take part in an interactive exercise playing the roles of merchants, photographers, and customers using serverless-retail core.  After that, you extend it using this workshop to calculate the winning photographer and merchant.  Perhaps, afterwards, you can extend it in even more interesting ways for extra credit!
 
-Serverless Retail is a 100% Serverless, Event-Driven Framework and Functional Proof-Of-Concept showcasing a central unified log approach as applied to the retail problem space. All code and patterns are intended to be re-usable for scalable applications large and small.
+Serverless Retail is a 100% Serverless, Event-Driven Framework and Functions As A Service (FaaS) Proof-Of-Concept showcasing a central unified log approach as applied to the retail problem space. All code and patterns are intended to be re-usable for scalable applications large and small.
+
+Using Microservices to create smaller, cohesive services. When these microservices need to interact, services call the API of another service. But this approach creates code and operational dependencies between microservices.
+
+Code dependencies created by calling other services creates complexity. The caller has to know which dependent services to call and how to call them. This becomes complex to manage in code as the number of dependencies grows.
+
+Operational dependencies between services can affect performance and availability of the application. Services that are dependent on an API depend on the performance that API. Increased latencies or failures in one service will impact other services.
+
+The solution to these problems is to reverse these dependencies by using Events. Creating services that produce and consume events allows you to decouple them.
+Event Sourcing is a well understood solution to this problem. But applying this solution to a completely Serverless Application is NEW.
+
+**Modern Agile** (Make People Awesome, Deliver Value Continuously, Make Safety a Prerequisite, Experiment and Learn Rapidly) is easier with Serverless, since Developers no longer have to solve problems that have been solved a million times before, by many other Developers (how to do authentication, how to scale, etc…) and allows them to focus on delivering Customer Value. Time to go to production can now be measured in hours, not days or weeks.
 
 ## Serverless Retail! core explained - an event-centric, serverless architecture
 ![Serverless all the things!](assets/images/serverless-retail-architecture.png)
@@ -32,5 +43,15 @@ So, if we had 10,000,000 events a day (~200 events per second peak) and 1,000 re
 > **_Notes:_**
 >
 > According to our limited resources, we just support NodeJS in Mac OS and Ubuntu 16.04 LTS.
+
+## Action Items
+
+- [x] Lesson0: Node.js
+- [x] Lesson0: AWS-CLI & AWS Credentials
+- [x] Photographer Registration
+- [x] Product Creation: New Product + New Photo
+- [x] Failure Handling
+- [x] Replay and Log persistence
+- [x] Securing Events
 
 

@@ -3,7 +3,7 @@
 function open_node_download {
     echo "Please visit ..."
     echo "https://nodejs.org/en/download/"
-    echo "... to download and install Node JS v6.10.2"
+    echo "... to download and install Node JS v6.11.0"
     exit 1
 }
 

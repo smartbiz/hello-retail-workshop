@@ -35,6 +35,13 @@ cd <path-to-local-workshop-dir>
 ./setup-nodejs.sh
 ```
 
+#### Ubuntu 16.04 LTS
+
+```sh
+cd <path-to-local-workshop-dir>
+sudo ./setup-nodejs.sh
+```
+
 #### Windows
  
 ```bat
