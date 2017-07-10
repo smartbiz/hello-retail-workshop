@@ -8,13 +8,14 @@ We advise using the native command line tools for your OS.
 Install git on your local machine by following instructions here: https://git-scm.com/downloads
 
 ### Windows
+
 > Make sure the folder path to git is added to the `PATH` environment variable so that you can run the following commands from the windows command line.
 > If it is not then you can add it by clicking `Windows` Key --> search `System` --> click `Advanced system settings` --> select `Advanced` tab --> click `Environment Variables` --> Under `System variables` select `PATH`/`Path` --> click `Edit` --> at the end of the `Variable value` add `;<path-to-git\cmd-folder-on-your-local-machine>` (example, `;C:\Program Files\Git\cmd`). **Make sure you add semi-colon before the path**
 
-Go to https://github.com/Nordstrom/hello-retail-workshop and clone it locally:
+Go to https://github.com/smartbiz/serverless-retail-workshop and clone it locally:
 
 ```sh
-git clone https://github.com/Nordstrom/hello-retail-workshop.git
+git clone https://github.com/smartbiz/serverless-retail-workshop.git
 ```
 
 If you would like to provide fixes or changes to the workshop, please [fork the repository](https://help.github.com/articles/fork-a-repo/) and submit a [pull request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/).
@@ -42,11 +43,6 @@ setup-win.bat
 ```
 
 ### Step 3: Setup your AWS credentials
-
-> **_NOTE: Nordstrom Technology!_**
->
-> If you are a _Nordstrom_ engineer, please ignore this step and instead see the page titled _`Serverless Workshop - Nordstrom Technology Setup`_ in **Confluence** and follow the instructions there.
-
 
 Install the [AWS-CLI](SETUP-AWS-CLI.md) and use the `aws configure` command to setup your credentials.
 

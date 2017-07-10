@@ -30,7 +30,7 @@ serverless remove -s $STAGE
 cd <path-to-local-workshop-dir>/Lesson2_CreateViewWithEventConsumer/winner-view
 serverless remove -s $STAGE
 
-cd <path-to-local-workshop-dir>/Lesson1_HelloRetailStream/ingress-stream
+cd <path-to-local-workshop-dir>/Lesson1_ServerlessRetailStream/ingress-stream
 serverless remove -s $STAGE
 ```
 
@@ -43,7 +43,7 @@ serverless remove -s %STAGE%
 cd <path-to-local-workshop-dir>\Lesson2_CreateViewWithEventConsumer\winner-view
 serverless remove -s %STAGE%
 
-cd <path-to-local-workshop-dir>\Lesson1_HelloRetailStream\ingress-stream
+cd <path-to-local-workshop-dir>\Lesson1_ServerlessRetailStream\ingress-stream
 serverless remove -s %STAGE%
 ```
 
